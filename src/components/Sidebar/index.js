@@ -1,9 +1,9 @@
 import React from "react";
-import "./index.scss";
+import './index.scss';
 import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome, faPerson } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, Link } from "react-router-dom";
 
 
@@ -19,10 +19,10 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink exact="true" activeclassname="active" className='about-link' to="/about">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faPerson} color="#4d4d4e" />
         </NavLink>
         <NavLink exact="true" activeclassname="active" className='contact-link' to="/contact">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
     </div>
